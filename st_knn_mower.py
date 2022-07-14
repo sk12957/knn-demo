@@ -42,4 +42,6 @@ if not y_pred:
 else:
     ax.scatter(lot_size, income, s=150, edgecolors="#27A7D8", c="#5FA15E")
 ax.annotate(",".join(str(x) for x in [lot_size, income]), (lot_size, income))
+plt.xlabel("Lot size")
+plt.ylabel("Income")
 st.pyplot(fig)
