@@ -27,7 +27,7 @@ if y_pred == 1:
     st.title("Bought")
 else:
     st.title("Not Bought")
-
+st.metric("N-Neighbours", 3)
 df = get_data()
 
 fig, ax = plt.subplots()
